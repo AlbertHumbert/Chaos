@@ -23,5 +23,5 @@
 ###### about now
 
 * simple build script
-* bootable image in elf format
+* bootable image in elf format verified by grub-file 
 * print a "Hello, World !" on screen
