@@ -12,35 +12,32 @@
 * compile a boot image based on GRUB multiboot
 
 
-		zsh build.sh	
+		sudo sh build.sh	
 		
 		
 * if you want to run the kernel on real hardware , make sure you have GRUB2 and xorriso installed，you can run the following command to create a iso image with GRUB mutiboot header
 
-
-		mkdir -p isodir/boot/grub
-		cp build/chaos.bin isodir/boot/chaos.bin
-		cp src/grub.cfg isodir/boot/grub/grub.cfg	
-		grub-mkrescue -o ./build/chaos.iso isodir
+		sudo sh  make-iso.sh
 		
-
+		
 * test the iso with qemu
 
 
-		qemu-system-i386 -cdrom ./build/chaos.iso
+		qemu-system-i386 -cdrom chaos.iso
 
 
 * or just simply use the following script to get it all done, it will comile the source, make an iso image, and open qemu
 
 
-		zsh run.sh	
+		 sudo sh start-qemu.sh
 		
 
 ###### about now
 
-* simple build script
+* makefile for kernel and libc
 * GRUB mutiboot iso 
 * print a "Hello, World !" on screen
+
 
 
 
