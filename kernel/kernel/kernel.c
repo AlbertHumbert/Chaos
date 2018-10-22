@@ -4,8 +4,8 @@
 void kernel_main()
 {
     terminal_initialize();
-    puts("          \n\n\n");
-    puts("          Hello, World!\n");
-	puts("          \n\n\n");
+    printf("          \n\n\n");
+    printf("          Hello, World!\n");
+	printf("          \n\n\n");
     
 }
