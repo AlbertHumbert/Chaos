@@ -36,7 +36,8 @@
 
 * makefile for kernel and libc
 * GRUB mutiboot iso 
-* print a "Hello, World !" on screen
+* gdt
+
 
 
 

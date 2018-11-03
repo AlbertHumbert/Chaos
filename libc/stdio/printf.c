@@ -22,6 +22,5 @@ int print_int(int num){
 }
 
 int printf(const char * format, ...){
-    print_int(11111);
     return 0;
 }
